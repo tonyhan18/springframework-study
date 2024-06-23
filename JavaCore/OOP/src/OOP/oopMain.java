@@ -1,5 +1,19 @@
 package OOP;
 
+import java.util.ArrayList;
+
+class Book
+{
+	String title;
+	String author;
+	
+	public Book(String string, String string2)
+	{
+		this.title = string;
+		this.author = string2;
+	}
+}
+
 public class oopMain {
 	
 	private int day;
@@ -20,8 +34,6 @@ public class oopMain {
 		this.day = day;
 	}
 
-
-
 	public static void main(String[] args) {
 		// project > Build Automatically 설정 필수
 		int n1 = 10;
@@ -32,5 +44,15 @@ public class oopMain {
 		
 		MakeReport report = new MakeReport();
 		System.out.println(report.getReport());
+		
+		// ctrl + shift + o => 필요한 라이브러리 추가 및 필요 없는거 삭제
+		ArrayList<Book> library = new ArrayList<Book>();
+		library.add(new Book("태백산맥", "조정래"));
+		
+		
+		for(int i = 0 ; i < library.size() ; i++)
+		{
+			System.out.println(library);
+		}
 	}
 }
