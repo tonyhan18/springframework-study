@@ -1,9 +1,14 @@
 package hello.hello_spring.repository;
 
 import hello.hello_spring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+/* Repository 폴더의 역할
+* DB와 상호작용하는 계층이다
+* */
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     /* DB가 아직 정해지지 않은 상태에서 store이라는 Map을 사용한다 */
