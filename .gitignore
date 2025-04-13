@@ -91,3 +91,4 @@ out/
 
 ### VS Code ###
 .vscode/
+*.zip
